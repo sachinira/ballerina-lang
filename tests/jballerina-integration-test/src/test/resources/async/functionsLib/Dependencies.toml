@@ -27,20 +27,6 @@ modules = [
 
 [[package]]
 org = "testOrg"
-name = "asyncFunctionPackage"
-version = "0.1.0"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "test"},
-	{org = "testOrg", name = "functionsLib"}
-]
-modules = [
-	{org = "testOrg", packageName = "asyncFunctionPackage", moduleName = "asyncFunctionPackage"},
-	{org = "testOrg", packageName = "asyncFunctionPackage", moduleName = "asyncFunctionPackage.mod1"}
-]
-
-[[package]]
-org = "testOrg"
 name = "functionsLib"
 version = "0.1.0"
 dependencies = [
