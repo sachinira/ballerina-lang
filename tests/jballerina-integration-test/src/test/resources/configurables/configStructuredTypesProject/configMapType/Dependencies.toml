@@ -10,9 +10,6 @@ dependencies-toml-version = "2"
 org = "ballerina"
 name = "jballerina.java"
 version = "0.0.0"
-modules = [
-	{org = "ballerina", packageName = "jballerina.java", moduleName = "jballerina.java"}
-]
 
 [[package]]
 org = "ballerina"
@@ -26,30 +23,31 @@ modules = [
 ]
 
 [[package]]
-org = "testOrg"
-name = "asyncFunctionPackage"
+org = "sachini"
+name = "configMapType"
 version = "0.1.0"
 dependencies = [
-	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "test"},
-	{org = "testOrg", name = "functionsLib"}
+	{org = "testOrg", name = "configLib"}
 ]
 modules = [
-	{org = "testOrg", packageName = "asyncFunctionPackage", moduleName = "asyncFunctionPackage"},
-	{org = "testOrg", packageName = "asyncFunctionPackage", moduleName = "asyncFunctionPackage.mod1"}
+	{org = "sachini", packageName = "configMapType", moduleName = "configMapType"},
+	{org = "sachini", packageName = "configMapType", moduleName = "configMapType.imported_maps"},
+	{org = "sachini", packageName = "configMapType", moduleName = "configMapType.type_defs"}
 ]
 
 [[package]]
 org = "testOrg"
-name = "functionsLib"
+name = "configLib"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "test"}
 ]
 modules = [
-	{org = "testOrg", packageName = "functionsLib", moduleName = "functionsLib"},
-	{org = "testOrg", packageName = "functionsLib", moduleName = "functionsLib.mod1"}
+	{org = "testOrg", packageName = "configLib", moduleName = "configLib"},
+	{org = "testOrg", packageName = "configLib", moduleName = "configLib.mod1"},
+	{org = "testOrg", packageName = "configLib", moduleName = "configLib.util"}
 ]
 
 
